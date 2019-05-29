@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: username1
+#    password: ps123456
+eureka:
+  instance:
+    hostname: localhost
+    preferIpAddress: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+        #defaultZone: http://username:ps123456@localhost:${server.port}/eureka/
