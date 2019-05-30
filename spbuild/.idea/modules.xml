@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/configl/configl.iml" filepath="$PROJECT_DIR$/configl/configl.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon/ribbon.iml" filepath="$PROJECT_DIR$/ribbon/ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp1/sp1.iml" filepath="$PROJECT_DIR$/sp1/sp1.iml" />
