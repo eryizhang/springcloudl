@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed977de0-78d1-4248-832e-d9fbdaf6d641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_1_1_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -17,6 +16,7 @@
     <ignored path="$PROJECT_DIR$/configl/target/" />
     <ignored path="$PROJECT_DIR$/config/target/" />
     <ignored path="$PROJECT_DIR$/configclient/target/" />
+    <ignored path="$PROJECT_DIR$/configservertest/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +31,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configservertest/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/configservertest/src/main/java/com/example/demo/ConfigservertestApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/src/main/java/com/example/demo/ConfigApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,6 +125,8 @@
         <option value="$PROJECT_DIR$/configclient/src/main/java/com/example/demo/ConfigclientApplication.java" />
         <option value="$PROJECT_DIR$/configclient/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/config/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/configservertest/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/configservertest/src/main/java/com/example/demo/ConfigservertestApplication.java" />
       </list>
     </option>
   </component>
@@ -221,6 +256,56 @@
             <path>
               <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
               <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="configservertest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="configservertest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="configservertest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="configservertest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="configservertest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="configservertest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="configservertest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
               <item name="sp1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -337,7 +422,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConfigApplication">
+  <component name="RunManager" selected="Application.ConfigservertestApplication">
     <configuration name="ConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.ConfigApplication" />
       <module name="config" />
@@ -364,9 +449,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfiglApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.ConfiglApplication" />
-      <module name="configl" />
+    <configuration name="ConfigservertestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.ConfigservertestApplication" />
+      <module name="configservertest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.demo.*" />
@@ -405,11 +490,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConfigservertestApplication" />
         <item itemvalue="Application.ConfigApplication" />
         <item itemvalue="Application.ConfigclientApplication" />
         <item itemvalue="Application.ConsumerApplication" />
         <item itemvalue="Application.Sp1Application" />
-        <item itemvalue="Application.ConfiglApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -647,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/java/com/example/demo/ConfigApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configclient/src/main/java/com/example/demo/ConfigclientApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -682,10 +757,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/java/com/example/demo/ConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configservertest/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configservertest/src/main/java/com/example/demo/ConfigservertestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

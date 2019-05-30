@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/config/pom.xml" />
         <option value="$PROJECT_DIR$/configclient/pom.xml" />
+        <option value="$PROJECT_DIR$/configservertest/pom.xml" />
       </list>
     </option>
   </component>
