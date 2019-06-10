@@ -1,0 +1,29 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  rabbitmq:
+    host: mybroker.com
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: configclient
+  cloud:
+    config:
+      label: master
+      profile: dev
+      #uri: http://localhost:7010/
+      discovery:
+        enabled: true
+        serviceId: config
+#management:
+#  security:
+#    enabled: false
+#  endpoints:
+#    web:
+#    exposure:
+#     include: health, info, refresh
+server:
+  port: 7020
