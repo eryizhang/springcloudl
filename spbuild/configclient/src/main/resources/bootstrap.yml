@@ -18,12 +18,12 @@ spring:
       discovery:
         enabled: true
         serviceId: config
-#management:
-#  security:
-#    enabled: false
-#  endpoints:
-#    web:
-#    exposure:
-#     include: health, info, refresh
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+     exposure:
+      include: health,info,refresh,bus-refresh
 server:
   port: 7020
