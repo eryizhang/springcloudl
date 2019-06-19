@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="consumer" />
         <module name="configservertest" />
         <module name="sp2" />
-        <module name="config" />
         <module name="ribbon" />
+        <module name="feignclient" />
+        <module name="zuult" />
         <module name="configclient" />
-        <module name="consumer" />
+        <module name="config" />
         <module name="sp1" />
       </profile>
     </annotationProcessing>
@@ -21,9 +23,11 @@
       <module name="configl" target="1.8" />
       <module name="configservertest" target="1.8" />
       <module name="consumer" target="12" />
+      <module name="feignclient" target="1.8" />
       <module name="ribbon" target="12" />
       <module name="sp1" target="12" />
       <module name="sp2" target="12" />
+      <module name="zuult" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,9 +37,11 @@
       <module name="configl" options="-parameters" />
       <module name="configservertest" options="-parameters" />
       <module name="consumer" options="-parameters" />
+      <module name="feignclient" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="sp1" options="-parameters" />
       <module name="sp2" options="-parameters" />
+      <module name="zuult" options="-parameters" />
     </option>
   </component>
 </project>
