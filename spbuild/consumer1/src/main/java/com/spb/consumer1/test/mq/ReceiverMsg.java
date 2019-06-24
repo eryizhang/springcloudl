@@ -1,4 +1,4 @@
-package com.example.demo.test.mq;
+package com.spb.consumer1.test.mq;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -11,7 +11,7 @@ public class ReceiverMsg {
 
     @RabbitListener(queues = "myQueue")
     public void printMQ(String message){
-        log.info("【队列消息】ReceiverMsg ,printMQ={}",message);
+        System.out.println("【队列消息】ReceiverMsg ,printMQ={}+"+message);
     }
 
 

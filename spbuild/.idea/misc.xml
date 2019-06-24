@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/configservertest/pom.xml" />
         <option value="$PROJECT_DIR$/feignclient/pom.xml" />
         <option value="$PROJECT_DIR$/zuult/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer1/pom.xml" />
       </list>
     </option>
   </component>
