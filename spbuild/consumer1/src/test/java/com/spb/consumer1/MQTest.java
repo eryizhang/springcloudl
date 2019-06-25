@@ -22,4 +22,16 @@ public class MQTest extends Consumer1ApplicationTests{
         amqpTemplate.convertAndSend("myQueue","hello , MQ");
     }
 
+
+    @Test
+    public void sendMilkTea() {
+        //第一个参数exchange; 第二个参数key; 第三个参数发送的msg
+        amqpTemplate.convertAndSend("myOrder","milkTea","hello , milkTeaMQ");
+    }
+
+    @Test
+    public void sendMac() {
+        amqpTemplate.convertAndSend("macOrder","mac","hello , macMQ");
+    }
+
 }
