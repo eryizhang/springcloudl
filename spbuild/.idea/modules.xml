@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/configclient/configclient.iml" filepath="$PROJECT_DIR$/configclient/configclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/configservertest/configservertest.iml" filepath="$PROJECT_DIR$/configservertest/configservertest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configtest/configtest.iml" filepath="$PROJECT_DIR$/configtest/configtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer1/consumer1.iml" filepath="$PROJECT_DIR$/consumer1/consumer1.iml" />
       <module fileurl="file://$PROJECT_DIR$/feignclient/feignclient.iml" filepath="$PROJECT_DIR$/feignclient/feignclient.iml" />

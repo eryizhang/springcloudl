@@ -6,16 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sp1" />
-        <module name="config" />
+        <module name="consumer" />
+        <module name="configclient" />
+        <module name="configtest" />
         <module name="sp2" />
         <module name="consumer1" />
         <module name="ribbon" />
         <module name="feignclient" />
         <module name="zuult" />
         <module name="configservertest" />
-        <module name="consumer" />
-        <module name="configclient" />
+        <module name="config" />
+        <module name="sp1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="12">
@@ -23,6 +24,7 @@
       <module name="configclient" target="1.8" />
       <module name="configl" target="1.8" />
       <module name="configservertest" target="1.8" />
+      <module name="configtest" target="12" />
       <module name="consumer" target="12" />
       <module name="consumer1" target="1.8" />
       <module name="feignclient" target="1.8" />
@@ -38,6 +40,7 @@
       <module name="configclient" options="-parameters" />
       <module name="configl" options="-parameters" />
       <module name="configservertest" options="-parameters" />
+      <module name="configtest" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="consumer1" options="-parameters" />
       <module name="feignclient" options="-parameters" />
