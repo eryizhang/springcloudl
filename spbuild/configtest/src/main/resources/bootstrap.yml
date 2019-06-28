@@ -19,6 +19,11 @@ spring:
       discovery:
         enabled: true
         serviceId: config
+    stream:
+      bindings:
+        myFirstStream:
+          group: orderStream
+          content: application/json
 management:
   security:
     enabled: false

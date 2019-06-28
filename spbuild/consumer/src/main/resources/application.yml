@@ -8,3 +8,9 @@ server:
 spring:
   application:
     name: service-ribbon
+PRODUCT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+hello:
+  jerry

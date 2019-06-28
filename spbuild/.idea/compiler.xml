@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
         <module name="configclient" />
+        <module name="streamp" />
         <module name="configtest" />
         <module name="sp2" />
         <module name="consumer1" />
         <module name="ribbon" />
         <module name="feignclient" />
+        <module name="streamc" />
         <module name="zuult" />
         <module name="configservertest" />
         <module name="config" />
@@ -31,6 +33,8 @@
       <module name="ribbon" target="12" />
       <module name="sp1" target="12" />
       <module name="sp2" target="12" />
+      <module name="streamc" target="12" />
+      <module name="streamp" target="12" />
       <module name="zuult" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -47,6 +51,8 @@
       <module name="ribbon" options="-parameters" />
       <module name="sp1" options="-parameters" />
       <module name="sp2" options="-parameters" />
+      <module name="streamc" options="-parameters" />
+      <module name="streamp" options="-parameters" />
       <module name="zuult" options="-parameters" />
     </option>
   </component>

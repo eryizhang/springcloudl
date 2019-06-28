@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed977de0-78d1-4248-832e-d9fbdaf6d641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_10_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_amqp_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_amqp_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/configtest/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/StreamClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamListen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamListen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamc/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/IMessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/MessageProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamp/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamp/src/test/java/com/spb/streamp/TestMessageProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configtest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configtest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/ConfigtestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/ConfigtestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configtest/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configtest/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/consumer1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/consumer1/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/sp1/target/" />
     <ignored path="$PROJECT_DIR$/sp2/target/" />
@@ -32,6 +39,8 @@
     <ignored path="$PROJECT_DIR$/zuult/target/" />
     <ignored path="$PROJECT_DIR$/consumer1/target/" />
     <ignored path="$PROJECT_DIR$/configtest/target/" />
+    <ignored path="$PROJECT_DIR$/streamp/target/" />
+    <ignored path="$PROJECT_DIR$/streamc/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,55 +56,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configclient/src/main/java/com/example/demo/ConfigclientApplication.java">
+        <entry file="file://$PROJECT_DIR$/sp2/src/main/java/com/example/demo/Sp2Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="-142">
+              <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/ConfigtestApplication.java">
+        <entry file="file://$PROJECT_DIR$/sp2/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="409">
+              <caret line="52" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sp1/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/streamc/src/main/java/com/spb/streamc/StreamcApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/streamc/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/configtest/src/main/resources/bootstrap.yml">
+        <entry file="file://$PROJECT_DIR$/streamc/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="17" selection-start-line="4" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configclient/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="61" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="61" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configtest/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+            <state relative-caret-position="450">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -120,6 +126,7 @@
       <find>EnableFeignClients</find>
       <find>EnableCircuitBreaker</find>
       <find>hystrix</find>
+      <find>EnableDiscoveryClient</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -131,21 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/configl/src/main/java/com/example/demo/ConfiglApplication.java" />
-        <option value="$PROJECT_DIR$/configl/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/configl/pom.xml" />
-        <option value="$PROJECT_DIR$/config/src/main/java/com/example/demo/ConfigApplication.java" />
-        <option value="$PROJECT_DIR$/config/src/main/resources/test.properties" />
-        <option value="$PROJECT_DIR$/configclient/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/configservertest/src/main/java/com/example/demo/ConfigservertestApplication.java" />
-        <option value="$PROJECT_DIR$/configservertest/pom.xml" />
-        <option value="$PROJECT_DIR$/configservertest/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/configclient/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/configclient/src/main/java/com/example/demo/ConfigclientApplication.java" />
-        <option value="$PROJECT_DIR$/config/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/configservertest/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/configclient/pom.xml" />
-        <option value="$PROJECT_DIR$/sp1/pom.xml" />
         <option value="$PROJECT_DIR$/config/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/configclient/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/config/pom.xml" />
@@ -155,7 +147,6 @@
         <option value="$PROJECT_DIR$/feignclient/src/main/java/com/example/demo/test/MovieController.java" />
         <option value="$PROJECT_DIR$/feignclient/pom.xml" />
         <option value="$PROJECT_DIR$/feignclient/src/main/java/com/example/demo/FeignclientApplication.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/feignclient/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/zuult/pom.xml" />
         <option value="$PROJECT_DIR$/zuult/src/main/java/com/example/demo/ZuutApplication.java" />
@@ -171,17 +162,33 @@
         <option value="$PROJECT_DIR$/consumer/src/test/java/com/example/demo/MQTest.java" />
         <option value="$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/mq/ReceiverMsg.java" />
         <option value="$PROJECT_DIR$/sp2/pom.xml" />
-        <option value="$PROJECT_DIR$/consumer1/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/Consumer1Application.java" />
         <option value="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/HelloService.java" />
-        <option value="$PROJECT_DIR$/consumer1/pom.xml" />
         <option value="$PROJECT_DIR$/consumer1/src/test/java/com/spb/consumer1/MQTest.java" />
         <option value="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/mq/ReceiverMsg.java" />
         <option value="$PROJECT_DIR$/consumer/pom.xml" />
         <option value="$PROJECT_DIR$/configtest/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/configtest/pom.xml" />
-        <option value="$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/ConfigtestApplication.java" />
+        <option value="$PROJECT_DIR$/consumer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamClient.java" />
+        <option value="$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamController.java" />
         <option value="$PROJECT_DIR$/configtest/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/configtest/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamListen.java" />
+        <option value="$PROJECT_DIR$/consumer1/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/ConfigtestApplication.java" />
+        <option value="$PROJECT_DIR$/consumer1/pom.xml" />
+        <option value="$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/StreamClient.java" />
+        <option value="$PROJECT_DIR$/streamp/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/IMessageProvider.java" />
+        <option value="$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/MessageProviderImpl.java" />
+        <option value="$PROJECT_DIR$/streamp/src/test/java/com/spb/streamp/TestMessageProvider.java" />
+        <option value="$PROJECT_DIR$/streamp/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamController.java" />
+        <option value="$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/Company.java" />
+        <option value="$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/StreampApplication.java" />
+        <option value="$PROJECT_DIR$/streamc/src/main/java/com/spb/streamc/StreamcApplication.java" />
+        <option value="$PROJECT_DIR$/streamc/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/streamc/pom.xml" />
       </list>
     </option>
   </component>
@@ -219,9 +226,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -242,150 +249,6 @@
             <path>
               <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
               <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configclient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configclient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configclient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configclient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configclient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configclient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="configtest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -421,151 +284,6 @@
             <path>
               <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
               <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="mq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer1" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="sp1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="sp1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="sp1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="sp1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="sp1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
-              <item name="sp1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
               <item name="sp2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -597,6 +315,110 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="sp2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="streamc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamc" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spbuild" type="462c0819:PsiDirectoryNode" />
+              <item name="streamp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spbuild" type="b2602c69:ProjectViewProjectNode" />
@@ -631,7 +453,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="12" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/configtest/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/streamc/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -639,16 +461,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.configtest" />
       <recent name="com.spb.consumer1" />
       <recent name="com.spb.consumer1.test.mq" />
       <recent name="com.example.demo.test.mq" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\streamc\src\main\resources" />
+      <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\streamp\src\main\resources" />
+      <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\consumer1\src\main\java\com\spb\consumer1\test" />
       <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\configtest\src\main\resources" />
       <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\consumer1\src\main\java\com\spb\consumer1" />
-      <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\consumer1\src\main\resources" />
-      <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\zuult\src\main\resources" />
-      <recent name="E:\zyh\mywrite\springcloudlearn\spbuildgit\springcloudl\springcloudl\spbuild\feignclient\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -663,39 +486,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConfigtestApplication">
-    <configuration name="ConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.ConfigApplication" />
-      <module name="config" />
+  <component name="RunManager" selected="Application.StreamcApplication">
+    <configuration name="Consumer1Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spb.consumer1.Consumer1Application" />
+      <module name="consumer1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigclientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.ConfigclientApplication" />
-      <module name="configclient" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigtestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.configtest.ConfigtestApplication" />
-      <module name="configtest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.configtest.*" />
+          <option name="PATTERN" value="com.spb.consumer1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -716,28 +513,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MQTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="consumer1" />
+    <configuration name="Sp2Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.Sp2Application" />
+      <module name="sp2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.spb.consumer1.*" />
+          <option name="PATTERN" value="com.example.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.spb.consumer1" />
-      <option name="MAIN_CLASS_NAME" value="com.spb.consumer1.MQTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamcApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spb.streamc.StreamcApplication" />
+      <module name="streamc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spb.streamc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreampApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spb.streamp.StreampApplication" />
+      <module name="streamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spb.streamp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConfigtestApplication" />
-        <item itemvalue="Application.ConfigApplication" />
+        <item itemvalue="Application.StreamcApplication" />
+        <item itemvalue="Application.Sp2Application" />
         <item itemvalue="Application.Sp1Application" />
-        <item itemvalue="Application.ConfigclientApplication" />
-        <item itemvalue="JUnit.MQTest" />
+        <item itemvalue="Application.StreampApplication" />
+        <item itemvalue="Application.Consumer1Application" />
       </list>
     </recent_temporary>
   </component>
@@ -796,10 +617,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2510661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2596472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -902,197 +723,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/feignclient/src/main/java/com/example/demo/test/MovieController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feignclient/src/main/java/com/example/demo/test/UserFeignClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feignclient/src/main/java/com/example/demo/FeignclientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuult/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/zuult/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuult/src/main/java/com/example/demo/ZuutApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feignclient/src/main/java/com/example/demo/controller/WebController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuult/src/main/java/com/example/demo/test/DemoFilter.java" />
-    <entry file="file://$PROJECT_DIR$/feignclient/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuult/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuult/src/main/java/com/example/demo/test/PostFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/ZuulFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-zuul/2.1.1.RELEASE/spring-cloud-netflix-zuul-2.1.1.RELEASE.jar!/org/springframework/cloud/netflix/zuul/filters/support/FilterConstants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuult/src/main/java/com/example/demo/test/PreFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-817">
-          <caret line="10" column="89" selection-start-line="10" selection-start-column="89" selection-end-line="10" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feignclient/src/main/java/com/example/demo/service/HelloWorldService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feignclient/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="74" selection-start-line="60" selection-start-column="8" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp2/sp2.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp2/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp2/src/main/java/com/example/demo/mqtest/ReceiverMsg.java" />
-    <entry file="file://$PROJECT_DIR$/consumer/src/test/java/com/example/demo/MQTest.java" />
-    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/mq/ReceiverMsg.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.1.5.RELEASE/spring-amqp-2.1.5.RELEASE.jar!/org/springframework/amqp/core/AmqpTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer/src/test/java/com/example/demo/ConsumerApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp2/src/test/java/com/example/demo/Sp2ApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp2/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer1/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/example/demo/ConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="10" selection-start-line="10" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/Consumer1Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -1137,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer1/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/mq/ReceiverMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1151,25 +774,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer1/src/test/java/com/spb/consumer1/MQTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1187,23 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp1/src/main/java/com/example/demo/Sp1Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sp2/src/main/java/com/example/demo/Sp2Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="16" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1231,13 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configtest/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sp1/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1252,17 +832,285 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/ConfigtestApplication.java">
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamListen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/example/demo/test/stream/StreamClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configtest/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="82" column="21" selection-start-line="79" selection-start-column="8" selection-end-line="82" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer1/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer1/src/test/java/com/spb/consumer1/Consumer1ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer1/src/test/java/com/spb/consumer1/MQTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/test/java/com/example/demo/ConsumerApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configtest/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="21" selection-start-line="21" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configtest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/ConfigtestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configtest/src/main/java/com/example/configtest/StreamClient.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/test/java/com/spb/streamp/StreampApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/test/java/com/spb/streamp/TestMessageProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamListen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer1/src/main/java/com/spb/consumer1/test/stream/StreamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/MessageProviderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#143#144#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/test/IMessageProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp1/src/main/java/com/example/demo/Sp1Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp2/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/example/demo/ConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamp/src/main/java/com/spb/streamp/StreampApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp2/src/main/java/com/example/demo/Sp2Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="15" selection-start-line="15" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamc/src/main/java/com/spb/streamc/StreamcApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamc/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
-          <caret line="17" selection-start-line="4" selection-end-line="17" />
+          <caret line="52" column="21" selection-start-line="22" selection-start-column="8" selection-end-line="52" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streamc/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
         </state>
       </provider>
     </entry>
