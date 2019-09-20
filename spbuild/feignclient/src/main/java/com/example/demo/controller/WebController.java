@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.service.ConsumerService;
 import com.example.demo.service.HelloWorldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebController {
     @Autowired
     HelloWorldService helloWorldFeignService;
+
+    @Autowired
+    ConsumerService consumerService;
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String sayHello(){
         System.out.println("***************hello*********");
@@ -19,6 +23,6 @@ public class WebController {
     @RequestMapping(value = "/hello2/t",method = RequestMethod.GET)
     public String sayHello1(){
         System.out.println("***************hello2222*********");
-        return helloWorldFeignService.sayHello();
+        return consumerService.sayHello2();
     }
 }

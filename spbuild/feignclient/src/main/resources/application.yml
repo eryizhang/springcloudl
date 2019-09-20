@@ -7,3 +7,7 @@ server:
 spring:
   application:
     name: fign
+
+security:
+  basic:
+    enabled: false

@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consumer" />
-        <module name="configclient" />
-        <module name="streamp" />
-        <module name="configtest" />
-        <module name="sp2" />
-        <module name="consumer1" />
         <module name="ribbon" />
-        <module name="feignclient" />
+        <module name="configservertest" />
         <module name="streamc" />
         <module name="zuult" />
-        <module name="configservertest" />
+        <module name="feigntest" />
+        <module name="configtest" />
+        <module name="configclient" />
+        <module name="feignclient" />
+        <module name="consumer1" />
         <module name="config" />
+        <module name="consumer" />
+        <module name="streamp" />
+        <module name="sp2" />
         <module name="sp1" />
       </profile>
     </annotationProcessing>
@@ -30,6 +31,8 @@
       <module name="consumer" target="12" />
       <module name="consumer1" target="1.8" />
       <module name="feignclient" target="1.8" />
+      <module name="feigntes" target="1.8" />
+      <module name="feigntest" target="1.8" />
       <module name="ribbon" target="12" />
       <module name="sp1" target="12" />
       <module name="sp2" target="12" />
@@ -48,6 +51,8 @@
       <module name="consumer" options="-parameters" />
       <module name="consumer1" options="-parameters" />
       <module name="feignclient" options="-parameters" />
+      <module name="feigntes" options="-parameters" />
+      <module name="feigntest" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="sp1" options="-parameters" />
       <module name="sp2" options="-parameters" />
