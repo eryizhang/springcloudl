@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/spbuild.iml" filepath="$PROJECT_DIR$/.idea/spbuild.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamc/streamc.iml" filepath="$PROJECT_DIR$/streamc/streamc.iml" />
       <module fileurl="file://$PROJECT_DIR$/streamp/streamp.iml" filepath="$PROJECT_DIR$/streamp/streamp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trubinet/trubinet.iml" filepath="$PROJECT_DIR$/trubinet/trubinet.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuult/zuult.iml" filepath="$PROJECT_DIR$/zuult/zuult.iml" />
     </modules>
   </component>

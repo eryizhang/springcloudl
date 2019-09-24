@@ -18,6 +18,7 @@
         <module name="config" />
         <module name="consumer" />
         <module name="streamp" />
+        <module name="trubinet" />
         <module name="sp2" />
         <module name="sp1" />
       </profile>
@@ -38,6 +39,7 @@
       <module name="sp2" target="12" />
       <module name="streamc" target="12" />
       <module name="streamp" target="12" />
+      <module name="trubinet" target="1.8" />
       <module name="zuult" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -58,6 +60,7 @@
       <module name="sp2" options="-parameters" />
       <module name="streamc" options="-parameters" />
       <module name="streamp" options="-parameters" />
+      <module name="trubinet" options="-parameters" />
       <module name="zuult" options="-parameters" />
     </option>
   </component>

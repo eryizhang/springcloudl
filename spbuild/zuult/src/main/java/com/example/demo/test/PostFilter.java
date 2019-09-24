@@ -26,6 +26,7 @@ public class PostFilter extends ZuulFilter {
      */
     @Override
     public String filterType() {
+        System.out.println("run  filterType");
         return POST_TYPE;
     }
 
@@ -37,6 +38,7 @@ public class PostFilter extends ZuulFilter {
      */
     @Override
     public int filterOrder() {
+        System.out.println("run  filterOrder");
         return SEND_RESPONSE_FILTER_ORDER - 1;
     }
 
@@ -47,6 +49,7 @@ public class PostFilter extends ZuulFilter {
      */
     @Override
     public boolean shouldFilter() {
+        System.out.println("run  shouldFilter");
         return true;
     }
 
@@ -58,6 +61,7 @@ public class PostFilter extends ZuulFilter {
      */
     @Override
     public Object run() throws ZuulException {
+        System.out.println("run  PreFilter");
         RequestContext requestContext = RequestContext.getCurrentContext();
         HttpServletResponse response = requestContext.getResponse();
         response.setHeader("POST-UUID", UUID.randomUUID().toString());

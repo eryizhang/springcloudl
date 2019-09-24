@@ -3,10 +3,10 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 server:
-  port: 8094
+  port: 8095
 spring:
   application:
-    name: figntest
+    name: trubinet
 
 security:
   basic:
@@ -21,3 +21,10 @@ management:
     web:
       exposure:
         include: "*"
+
+
+turbine:
+  appConfig: figntest,hi,service-ribbon1
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")

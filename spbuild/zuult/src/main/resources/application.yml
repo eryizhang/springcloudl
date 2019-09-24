@@ -15,4 +15,4 @@ zuul:
       serviceId: hi
     feign:
       path: /hello2/**
-      serviceId: fign
+      serviceId: figntest

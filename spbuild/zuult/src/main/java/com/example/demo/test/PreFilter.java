@@ -36,6 +36,7 @@ public class PreFilter extends ZuulFilter {
      */
     @Override
     public int filterOrder() {
+        System.out.println("filterOrder   PreFilter");
         return PRE_DECORATION_FILTER_ORDER - 1;
     }
 
