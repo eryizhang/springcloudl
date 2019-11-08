@@ -16,6 +16,19 @@ feign:
   hystrix:
     enabled: true
 
+hystrix:
+  command:
+    default:
+      metrics:
+        circuitBreaker:
+          requestVolumeThreshold: 5
+          sleepWindowInMilliseconds: 20
+  threadpool:
+    default:
+      coreSize: 200 #并发执行的最大线程数，默认10
+      maxQueueSize: 1000 #BlockingQueue的最大队列数，默认值-1
+      queueSizeRejectionThreshold: 800 #即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝，默认值5
+
 management:
   endpoints:
     web:

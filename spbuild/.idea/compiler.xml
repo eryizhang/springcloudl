@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ribbon" />
+        <module name="hytrixt" />
         <module name="configservertest" />
         <module name="streamc" />
         <module name="zuult" />
@@ -34,7 +35,10 @@
       <module name="feignclient" target="1.8" />
       <module name="feigntes" target="1.8" />
       <module name="feigntest" target="1.8" />
+      <module name="hysclient" target="1.8" />
+      <module name="hytrixt" target="1.8" />
       <module name="ribbon" target="12" />
+      <module name="server" target="1.8" />
       <module name="sp1" target="12" />
       <module name="sp2" target="12" />
       <module name="streamc" target="12" />
@@ -55,7 +59,10 @@
       <module name="feignclient" options="-parameters" />
       <module name="feigntes" options="-parameters" />
       <module name="feigntest" options="-parameters" />
+      <module name="hysclient" options="-parameters" />
+      <module name="hytrixt" options="-parameters" />
       <module name="ribbon" options="-parameters" />
+      <module name="server" options="-parameters" />
       <module name="sp1" options="-parameters" />
       <module name="sp2" options="-parameters" />
       <module name="streamc" options="-parameters" />

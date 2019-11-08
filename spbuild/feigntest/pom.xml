@@ -79,11 +79,11 @@
 			<artifactId>spring-cloud-starter-hystrix</artifactId>
 		</dependency>
 		
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>5.1.8.RELEASE</version>
-		</dependency>
+		</dependency>-->
 
 	</dependencies>
 

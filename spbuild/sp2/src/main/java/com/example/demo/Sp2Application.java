@@ -26,20 +26,30 @@ public class Sp2Application {
 	@Value("${server.port}")
 	String port;
 
+	int i=0;
+
+	int j=0;
+
 	@RequestMapping("/hi")
 	public String home(@RequestParam String name)
 	{
-		System.out.println("*****************hi*************************");
-		return "hi " + name + ",i am from port:" + port;
+		i++;
+
+		System.out.println("*****************hi*************************"+i);
+
+		return "hi " + name + ",i am from port:" + port+"and this is "+i+"request";
 	}
 
 	@RequestMapping("/hi2/test")
 	public Object home1(@RequestParam String name)
 	{
-		System.out.println("*****************hi2222222*******************");
+		j++;
+
+		System.out.println("*****************hi2222222*******************"+j);
+
 		Map<String,Object> map=new HashMap<>();
 		map.put("name",name);
 		map.put("str","hi");
-		return map;
+		return "test"+j;
 	}
 }

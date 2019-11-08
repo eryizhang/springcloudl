@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/consumer1/consumer1.iml" filepath="$PROJECT_DIR$/consumer1/consumer1.iml" />
       <module fileurl="file://$PROJECT_DIR$/feignclient/feignclient.iml" filepath="$PROJECT_DIR$/feignclient/feignclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/feigntest/feigntest.iml" filepath="$PROJECT_DIR$/feigntest/feigntest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hytrixt/hytrixt.iml" filepath="$PROJECT_DIR$/hytrixt/hytrixt.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon/ribbon.iml" filepath="$PROJECT_DIR$/ribbon/ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp1/sp1.iml" filepath="$PROJECT_DIR$/sp1/sp1.iml" />
       <module fileurl="file://$PROJECT_DIR$/sp2/sp2.iml" filepath="$PROJECT_DIR$/sp2/sp2.iml" />

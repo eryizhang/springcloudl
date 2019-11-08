@@ -12,5 +12,17 @@ PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
+
+hystrix:
+  command:
+    default:
+      metrics:
+        circuitBreaker:
+          requestVolumeThreshold: 5
+          sleepWindowInMilliseconds: 60000
+          errorThresholdPercentage: 20%
+
+
+
 hello:
   jerry
